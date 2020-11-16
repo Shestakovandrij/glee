@@ -1,0 +1,11 @@
+body {
+  font-size: 16px;
+  color: $default-color;
+  @extend %DMSans-500;
+}
+
+.container {
+  min-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
