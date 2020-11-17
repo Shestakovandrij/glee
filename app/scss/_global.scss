@@ -1,11 +1,20 @@
 body {
+  background-color: #fff;
   font-size: 16px;
   color: $default-color;
   @extend %DMSans-500;
 }
 
+a {
+  font-size: 14px;
+  line-height: 32px;
+  color: $grey-color;
+  @extend %rubik-400;
+}
+
 .container {
-  min-width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
