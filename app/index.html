@@ -11,50 +11,62 @@
 <body>
 
   <header class="header">
-    <div class="header__inner">
-      <a class="logo" href="#">
-        <img class="logo__img" src="images/logo.png" alt="logo">
-      </a>
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Home +</a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__list-link" href="#">About</a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Services</a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Pages +</a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__list-link" href="#">News</a>
-          </li>
-          <li class="menu__list-item">
-            <a class="menu__list-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="user-nav">
-        <a class="user-nav__link user-nav__link--search" href="#">
-          <img class="user-nav__link-img" src="images/icons/search.svg" alt="search icon">
+    <div class="container container--lg">
+      <div class="header__inner">
+        <a class="logo header__logo" href="#">
+          <img class="logo__img" src="images/logo.png" alt="logo">
         </a>
-        <div class="user-nav__items">
-          <a class="user-nav__link" href="#">
-            <img class="user-nav__link-img" src="images/icons/heart.svg" alt="search icon">
-            <span class="user-nav__num">0</span>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Home +</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">About</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Services</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Pages +</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">News</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="user-nav">
+          <a class="user-nav__link user-nav__link--search" href="#">
+            <svg class="user-nav__img user-nav__img--search">
+              <use xlink:href="#search"></use>
+            </svg>
           </a>
-          <a class="user-nav__link user-nav__link--cart" href="#">
-            <img class="user-nav__link-img" src="images/icons/cart.svg" alt="search icon">
-            <span class="user-nav__num">0</span>
+          <div class="user-nav__items">
+            <a class="user-nav__link user-nav__link--heart" href="#">
+
+              <svg class="user-nav__img">
+                <use xlink:href="#heart"></use>
+              </svg>
+
+              <span class="user-nav__num">0</span>
+            </a>
+            <a class="user-nav__link user-nav__link--cart" href="#">
+              <svg class="user-nav__img">
+                <use xlink:href="#cart"></use>
+              </svg>
+              <span class="user-nav__num">0</span>
+            </a>
+          </div>
+          <a class="user-nav__link user-nav__link--dots" href="#">
+            <svg class="user-nav__img user-nav__img--dots">
+              <use xlink:href="#dots"></use>
+            </svg>
           </a>
         </div>
-        <a class="user-nav__link user-nav__link--dots" href="#">
-          <img class="user-nav__link-img" src="images/icons/menu.svg" alt="search icon">
-        </a>
       </div>
     </div>
   </header>
@@ -62,7 +74,7 @@
   <main class="main">
 
     <section class="slider-top">
-      <div class="container">
+      <div class="container container--lg">
         <div class="slider-top__inner">
           <div class="slider-top__items">
             <div class="slider-top__item">
@@ -123,121 +135,125 @@
 
   <footer class="footer">
     <div class="container">
-      <div class="footer-top">
-        <div class="footer-top__item footer-top__contact">
-          <a class="logo footer-top__logo" href="#">
+      <div class="footer__top">
+        <div class="footer__contact">
+          <a class="logo footer__logo" href="#">
             <img class="logo__img" src="images/logo.png" alt="logo">
           </a>
-          <p class="footer-top__item-text">Address:</p>
-          <a class="footer-top__adress" href="#">
-            4772 Wines Lane
-            Houston, TX 77032
-          </a>
-          <p class="footer-top__item-text">Telephone:</p>
-          <a class="footer-top__phone" href="tel:+8323475843">
-            +832-347-5843
-          </a>
-          <p class="footer-top__item-text">Email:</p>
-          <a class="footer-top__email" href="mailto:contact@Glee.com">
-            contact@Glee.com
-          </a>
+          <address class="address">
+            <p class="footer__item-text">Address:</p>
+            <a class="footer__address" href="#">
+              4772 Wines Lane
+              Houston, TX 77032
+            </a>
+            <p class="footer__item-text">Telephone:</p>
+            <a class="footer__address" href="tel:+8323475843">
+              +832-347-5843
+            </a>
+            <p class="footer__item-text">Email:</p>
+            <a class="footer__address" href="mailto:contact@Glee.com">
+              contact@Glee.com
+            </a>
+          </address>
         </div>
-        <div class="footer-top__items footer-top__nav">
-          <div class="footer-top__title">
+        <div class="footer__nav">
+          <div class="footer__title">
             Services
           </div>
-          <ul class="footer-top__list">
-            <li class="footer-top__item">
-              <a class="footer-top__link" href="#">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">
                 About us
               </a>
             </li>
-            <li class="footer-top__item">
-              <a class="footer-top__link" href="#">
+            <li class="footer__item">
+              <a class="footer__link" href="#">
                 Return Policy
               </a>
             </li>
-            <li class="footer-top__item">
-              <a class="footer-top__link" href="#">
+            <li class="footer__item">
+              <a class="footer__link" href="#">
                 Our Blog
               </a>
             </li>
-            <li class="footer-top__item">
-              <a class="footer-top__link" href="#">
+            <li class="footer__item">
+              <a class="footer__link" href="#">
                 Contact Us
               </a>
             </li>
-            <li class="footer-top__item">
-              <a class="footer-top__link" href="#">
+            <li class="footer__item">
+              <a class="footer__link" href="#">
                 Terms & Condition
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer-top__items footer-top__nav">
-          <div class="footer-top__title">
+        <div class="footer__items footer__nav">
+          <div class="footer__title footer__title--account">
             Account
           </div>
-          <ul class="footer-top__list">
-            <li class="footer-top__item">
-              <a class="footer-top__link" href="#">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">
                 Your Account
               </a>
             </li>
-            <li class="footer-top__item">
-              <a class="footer-top__link" href="#">
+            <li class="footer__item">
+              <a class="footer__link" href="#">
                 Checkout
               </a>
             </li>
-            <li class="footer-top__item">
-              <a class="footer-top__link" href="#">
+            <li class="footer__item">
+              <a class="footer__link" href="#">
                 Login
               </a>
             </li>
-            <li class="footer-top__item">
-              <a class="footer-top__link" href="#">
+            <li class="footer__item">
+              <a class="footer__link" href="#">
                 Register
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer-top__items footer-top__item-form">
-          <div class="footer-top__title">
+        <div class="footer__form">
+          <div class="footer__title">
             newsletter
           </div>
-          <p class="footer-top__text">
+          <p class="footer__text">
             Subscribe by our newsletter and get update protidin.
           </p>
-          <form class="footer-top__form" action="#">
-            <input class="footer-top__form-input" type="email" placeholder="Email address" required>
-            <button class="footer-top__form-btn" type="submit">
+          <form class="footer__form" action="#">
+            <label class="footer__label" for="footer__input">
+              <input id="footer__input" class="footer__input" name="subscribe[email]" type="email" placeholder="Email address" required>
+            </label>
+            <button class="footer__btn" type="submit">
               Subscribe
             </button>
           </form>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p class="footer-bottom__copy">
+      <div class="footer__bottom">
+        <p class="footer__bottom-copy">
           ©2020 CopyRight Example. All rights reserved.
         </p>
-        <ul class="footer-bottom__navigation-list">
-          <li class="footer-bottom__navigation-item">
-            <a class="footer-bottom__navigation-link" href="#">
+        <ul class="footer__bottom-list">
+          <li class="footer__bottom-item">
+            <a class="footer__bottom-link" href="#">
               Home
             </a>
           </li>
-          <li class="footer-bottom__navigation-item">
-            <a class="footer-bottom__navigation-link" href="#">
+          <li class="footer__bottom-item">
+            <a class="footer__bottom-link" href="#">
               About
             </a>
           </li>
-          <li class="footer-bottom__navigation-item">
-            <a class="footer-bottom__navigation-link" href="#">
+          <li class="footer__bottom-item">
+            <a class="footer__bottom-link" href="#">
               Blog
             </a>
           </li>
-          <li class="footer-bottom__navigation-item">
-            <a class="footer-bottom__navigation-link" href="#">
+          <li class="footer__bottom-item">
+            <a class="footer__bottom-link" href="#">
               Contact
             </a>
           </li>
@@ -245,6 +261,35 @@
       </div>
     </div>
   </footer>
+  <svg display="none">
+    <symbol id="heart" viewBox="0 0 17.875 15.531">
+      <path class="cls-1"
+        d="M9.913,16.244a0.706,0.706,0,0,1-.279-0.056c-0.353-.15-8.65-3.749-8.65-10.76a4.818,4.818,0,0,1,8.93-2.4A4.818,4.818,0,0,1,18.842,5.4c0,7.034-8.3,10.634-8.649,10.783A0.709,0.709,0,0,1,9.913,16.244ZM5.8,2.106A3.424,3.424,0,0,0,2.393,5.452c0,5.407,6.125,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.409,3.409,0,0,0-6.816.024,0.7,0.7,0,0,1-.7.669h0a0.7,0.7,0,0,1-.7-0.669A3.424,3.424,0,0,0,5.8,2.106Z"
+        transform="translate(-0.969 -0.719)" />
+    </symbol>
+  </svg>
+  <svg display="none">
+    <symbol id="cart" viewBox="0 0 18.94 16.969">
+      <path class="cls-1"
+        d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+        transform="translate(-1716 -69)" />
+    </symbol>
+  </svg>
+  <svg display="none">
+    <symbol id="search" viewBox="0 0 15.28 15.281">
+      <path fill="#243f4d" fill-rule="evenodd"
+        d="M1547.7,72.076a0.617,0.617,0,0,1,.75.485,2.583,2.583,0,0,0,.78,1.489,3.036,3.036,0,0,0,1.49.777,0.636,0.636,0,0,1,.49.743,0.649,0.649,0,0,1-.72.515,4.21,4.21,0,0,1-2.14-1.13,4.164,4.164,0,0,1-1.13-2.136A0.6,0.6,0,0,1,1547.7,72.076ZM1550.98,66a6.267,6.267,0,0,1,6.28,6.257,6.136,6.136,0,0,1-.57,2.6l2.34,2.036c1.7,1.746.74,3.266,0.29,3.717-0.42.454-1.99,1.414-3.73-.292l-2.06-2.35A6.261,6.261,0,1,1,1550.98,66Zm5.55,13.517a1.352,1.352,0,0,0,1.88.226,1.313,1.313,0,0,0-.23-1.874l-2.16-1.88a6.236,6.236,0,0,1-1.37,1.34Zm-5.55-2.312a4.948,4.948,0,1,0-4.97-4.948A4.963,4.963,0,0,0,1550.98,77.2Z"
+        transform="translate(-1544.72 -66)" />
+    </symbol>
+  </svg>
+  <svg display="none">
+    <symbol id="dots" viewBox="0 0 20.03 20.031">
+      <path fill="#fff" fill-rule="evenodd"
+        d="M1813.15,67.881a2.146,2.146,0,1,1,2.14-2.145A2.145,2.145,0,0,1,1813.15,67.881Zm0,7.869a2.146,2.146,0,1,1,2.14-2.147A2.146,2.146,0,0,1,1813.15,75.75Zm0,7.868a2.146,2.146,0,1,1,2.14-2.146A2.145,2.145,0,0,1,1813.15,83.618Zm7.86-15.737a2.146,2.146,0,1,1,2.15-2.145A2.143,2.143,0,0,1,1821.01,67.881Zm0,7.869a2.146,2.146,0,1,1,2.15-2.147A2.144,2.144,0,0,1,1821.01,75.75Zm0,7.868a2.146,2.146,0,1,1,2.15-2.146A2.143,2.143,0,0,1,1821.01,83.618Zm7.87-15.737a2.146,2.146,0,1,1,2.15-2.145A2.143,2.143,0,0,1,1828.88,67.881Zm0,7.869a2.146,2.146,0,1,1,2.15-2.147A2.144,2.144,0,0,1,1828.88,75.75Zm0,7.868a2.146,2.146,0,1,1,2.15-2.146A2.143,2.143,0,0,1,1828.88,83.618Z"
+        transform="translate(-1811 -63.594)" />
+    </symbol>
+  </svg>
+
 
   <script src="js/main.min.js"></script>
 </body>

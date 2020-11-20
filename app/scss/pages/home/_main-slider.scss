@@ -1,0 +1,70 @@
+.slider-top {
+  background-color: $bg-color;
+  padding-top: 217px;
+  padding-bottom: 45px;
+  &__item {
+    display: flex;
+    justify-content: center;
+  }
+  &__content {
+    margin: 0 110px 227px 0;
+    padding-left: 1px;
+  }
+  &__title {
+    max-width: 420px;
+    margin-bottom: 28px;
+    font-size: 72px;
+    line-height: 97%;
+    text-transform: uppercase;
+    color: $default-color;
+    @extend %rubik-500;
+  }
+  &__text {
+    max-width: 370px;
+    margin-bottom: 55px;
+    font-size: 18px;
+    line-height: 170%;
+    color: #436372;
+    @extend %rubik-400;
+  }
+  &__btn {
+    background-color: $accent-color;
+    padding: 21px 101px 21px 28px;
+    font-size: 15px;
+    line-height: 12px;
+    color: #fff;
+    @extend %rubik-500;
+    position: relative;
+  }
+  &__btn::before {
+    content: url(../images/icons/arrow.svg);
+    position: absolute;
+    right: 19px;
+    top: 24px;
+  }
+  &__img {
+    max-height: 264px;
+    margin-top: 55px;
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    li {
+      button {
+        padding: 0;
+        font-size: 10px;
+        background-color: #fde3cc;
+        width: 29px;
+        height: 29px;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        @extend %rubik-500;
+      }
+      
+    }
+  }
+  .slick-dots li + li {
+    margin-left: 10px;
+  }
+}
