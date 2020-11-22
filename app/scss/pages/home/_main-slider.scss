@@ -36,14 +36,14 @@
     padding: 21px 101px 21px 28px;
     font-size: 15px;
     line-height: 1.2;
-    color: #fff;
+    color: $white-color;
     @extend %rubik-500;
     position: relative;
     &::before {
       content: url(../images/icons/arrow.svg);
       position: absolute;
       right: 19px;
-      top: 24px;
+      top: 21px;
     }
   }
   &__img {
@@ -71,7 +71,7 @@
       }
       &.slick-active {
         button {
-          background-color: #fff;
+          background-color: $white-color;
         }
       }
     }
@@ -127,7 +127,7 @@
   &__info-text {
     font-size: 16px;
     line-height: 1.7;
-    @extend %DMSans-400;
     color: #585858;
+    @extend %DMSans-400;
   }
 }

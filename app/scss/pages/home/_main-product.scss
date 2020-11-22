@@ -61,7 +61,7 @@
     bottom: 147px;
   }
   &__link {
-    background-color: #fff;
+    background-color: $white-color;
     border-radius: 50%;
     padding: 24px 8px 4px 9px;
 
@@ -69,7 +69,7 @@
       background-color: $accent-color;
     }
     &:hover .product__link-img {
-      fill: #fff;
+      fill: $white-color;
     }
 
     & + & {
