@@ -17,6 +17,12 @@ body {
   flex-grow: 1;
 }
 
+.title {
+  font-size: 36px;
+  color: $black-color;
+  @extend %DMSans-700;
+}
+
 a {
   font-size: 14px;
   color: inherit;
