@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-around;
   }
+
   &__item {
     display: flex;
     background-color: #feefe2;
@@ -10,16 +11,20 @@
 
     padding-bottom: 77px;
     margin-bottom: 100px;
+
     & + & {
       margin-left: 30px;
     }
   }
+
   &__img {
     margin: -90px 63px 0 140px;
   }
+
   &__content {
     margin-right: 130px;
   }
+
   &__title {
     font-size: 26px;
     color: $default-color;
@@ -27,10 +32,12 @@
     margin-bottom: 11px;
     margin-top: 82px;
   }
+
   &__text {
     line-height: 1.9;
     margin-bottom: 46px;
   }
+
   &__btn {
     border: 1px solid $btn-color;
     padding: 20px 94px 22px 25px;
@@ -39,6 +46,7 @@
     font-size: 15px;
     color: #436372;
     @extend %rubik-500;
+
     &::before {
       content: url(../images/icons/arrow-2.svg);
       position: absolute;

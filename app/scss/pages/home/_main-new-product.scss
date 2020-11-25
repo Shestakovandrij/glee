@@ -17,7 +17,8 @@
     border: none;
     @extend %DMSans-700;
     color: $grey-color;
-    & + & {
+
+    &+& {
       margin-left: 27px;
     }
   }
@@ -30,6 +31,7 @@
 
     margin-bottom: 120px;
   }
+
   &__item {
     padding: 34px 139px 127px 35px;
 
@@ -45,6 +47,7 @@
     right: 0;
     z-index: 2;
   }
+
   &__name {
     font-size: 20px;
     @extend %DMSans-700;
@@ -56,6 +59,7 @@
     color: $accent-color;
     @extend %DMSans-700;
   }
+
   &__img {
     position: absolute;
     right: 0;
@@ -67,6 +71,7 @@
     }
   }
 }
+
 .mixitup-control-active {
   color: $black-color;
 }

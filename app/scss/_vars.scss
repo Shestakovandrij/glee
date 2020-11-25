@@ -10,18 +10,22 @@ $btn-color: #b3b7b5;
   font-family: 'Rubik-Regular', sans-serif;
   font-weight: 400;
 }
+
 %rubik-500 {
   font-family: 'Rubik-Medium', sans-serif;
   font-weight: 500;
 }
+
 %DMSans-400 {
   font-family: 'DMSans-Regular', sans-serif;
   font-weight: 400;
 }
+
 %DMSans-500 {
   font-family: 'DMSans-Medium', sans-serif;
   font-weight: 500;
 }
+
 %DMSans-700 {
   font-family: 'DMSans-Bold', sans-serif;
   font-weight: 700;
@@ -30,6 +34,7 @@ $btn-color: #b3b7b5;
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
 }
+
 @function min($numbers...) {
   @return m#{i}n(#{$numbers});
 }

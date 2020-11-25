@@ -1,6 +1,6 @@
 .main-slider {
   &__inner {
-    padding: 217px 0 45px;
+    padding: 208px 0 45px;
     background-color: $bg-color;
     background-image: url(../../images/bg-gradient.png);
     background-repeat: no-repeat;
@@ -19,9 +19,9 @@
 
   &__title {
     max-width: 420px;
-    margin-bottom: 22px;
+    margin-bottom: 3px;
     font-size: 72px;
-    line-height: 1;
+    line-height: 1.2;
     text-transform: uppercase;
     color: $default-color;
     @extend %rubik-500;

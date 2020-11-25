@@ -22,22 +22,28 @@
       top: -38px;
     }
 
-    &--support::before {
-      background-image: url(../../images/icons/support.svg);
-      width: 51px;
-      height: 53px;
+    &--support {
+      &::before {
+        background-image: url(../images/icons/support.svg);
+        width: 51px;
+        height: 53px;
+      }
     }
 
-    &--delivery::before {
-      background-image: url(../../images/icons/delivery.svg);
-      width: 54px;
-      height: 36px;
+    &--delivery {
+      &::before {
+        background-image: url(../images/icons/delivery.svg);
+        width: 54px;
+        height: 36px;
+      }
     }
 
-    &--pay::before {
-      background-image: url(../../images/icons/pay.svg);
-      width: 54px;
-      height: 53px;
+    &--pay {
+      &::before {
+        background-image: url(../images/icons/pay.svg);
+        width: 54px;
+        height: 53px;
+      }
     }
 
     &::before {
