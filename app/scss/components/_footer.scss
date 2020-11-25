@@ -71,10 +71,27 @@
   &__btn {
     border: none;
     background-color: $accent-color;
+
     color: #fff;
     font-size: 14px;
+
     padding: 10px 18px 10px 16px;
     margin-left: -4px;
+
+    cursor: pointer;
+    &:hover {
+      animation: pulse 1s infinite;
+
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 0 0 0px rgba(163, 187, 200, 0.514);
+        }
+
+        10% {
+          box-shadow: 0 0 0 5px rgba(4, 20, 20, 0.041);
+        }
+      }
+    }
   }
   &__bottom {
     display: flex;

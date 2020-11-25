@@ -6,14 +6,17 @@
     background-repeat: no-repeat;
     background-position: 84%;
   }
+
   &__item {
     display: flex;
     justify-content: center;
   }
+
   &__content {
     margin: 0 110px 227px 0;
     padding-left: 1px;
   }
+
   &__title {
     max-width: 420px;
     margin-bottom: 22px;
@@ -23,6 +26,7 @@
     color: $default-color;
     @extend %rubik-500;
   }
+
   &__text {
     max-width: 370px;
     margin-bottom: 59px;
@@ -31,6 +35,7 @@
     color: #436372;
     @extend %rubik-400;
   }
+
   &__btn {
     background-color: $accent-color;
     padding: 21px 101px 21px 28px;
@@ -39,6 +44,7 @@
     color: $white-color;
     @extend %rubik-500;
     position: relative;
+
     &::before {
       content: url(../images/icons/arrow.svg);
       position: absolute;
@@ -46,6 +52,7 @@
       top: 21px;
     }
   }
+
   &__img {
     max-height: 264px;
     margin-top: 55px;
@@ -54,9 +61,11 @@
   .slick-dots {
     display: flex;
     justify-content: center;
-    li + li {
+
+    li+li {
       margin-left: 10px;
     }
+
     li {
       button {
         padding: 0;
@@ -69,6 +78,7 @@
         cursor: pointer;
         @extend %rubik-500;
       }
+
       &.slick-active {
         button {
           background-color: $white-color;
@@ -76,6 +86,7 @@
       }
     }
   }
+
   &__info {
     display: flex;
     justify-content: space-around;
@@ -83,11 +94,13 @@
     padding: 38px 0px 37px 0;
     margin-bottom: 65px;
   }
+
   &__info-item {
     padding-left: 61px;
     max-width: 274px;
     position: relative;
-    & + &::after {
+
+    &+&::after {
       content: "";
       position: absolute;
       border-left: 1px solid #e8e4df;
@@ -95,21 +108,25 @@
       left: -167px;
       top: -38px;
     }
+
     &--support::before {
       background-image: url(../../images/icons/support.svg);
       width: 51px;
       height: 53px;
     }
+
     &--delivery::before {
       background-image: url(../../images/icons/delivery.svg);
       width: 54px;
       height: 36px;
     }
+
     &--pay::before {
       background-image: url(../../images/icons/pay.svg);
       width: 54px;
       height: 53px;
     }
+
     &::before {
       content: "";
       position: absolute;
@@ -117,6 +134,7 @@
       left: -16px;
     }
   }
+
   &__info-title {
     font-size: 18px;
     line-height: 1.8;
@@ -124,6 +142,7 @@
     color: #414141;
     margin-bottom: 7px;
   }
+
   &__info-text {
     font-size: 16px;
     line-height: 1.7;

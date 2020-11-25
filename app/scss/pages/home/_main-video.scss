@@ -1,6 +1,38 @@
 .video {
+  min-height: 46.5vh;
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__link {
+    background-color: $accent-color;
+    border-radius: 50%;
+
+    padding: 30px 37px;
+
+    animation: pulse 1.5s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0px rgba(163, 187, 200, 0.514);
+    }
+
+    100% {
+      box-shadow: 0 0 0 20px rgba(4, 20, 20, 0.041);
+    }
+  }
+
+  &__item {
+    width: 22px;
+    height: 25px;
+
+    margin-left: 2px;
+    margin-top: 6px;
+  }
 }
