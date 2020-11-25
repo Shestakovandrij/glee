@@ -1,0 +1,65 @@
+.main-info {
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fef7f0;
+    padding: 38px 0px 37px 0;
+    margin-bottom: 65px;
+  }
+
+
+  &__item {
+    padding-left: 61px;
+    max-width: 274px;
+    position: relative;
+
+    &+&::after {
+      content: "";
+      position: absolute;
+      border-left: 1px solid #e8e4df;
+      height: 169px;
+      left: -167px;
+      top: -38px;
+    }
+
+    &--support::before {
+      background-image: url(../../images/icons/support.svg);
+      width: 51px;
+      height: 53px;
+    }
+
+    &--delivery::before {
+      background-image: url(../../images/icons/delivery.svg);
+      width: 54px;
+      height: 36px;
+    }
+
+    &--pay::before {
+      background-image: url(../../images/icons/pay.svg);
+      width: 54px;
+      height: 53px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: -16px;
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 1.8;
+    @extend %DMSans-700;
+    color: #414141;
+    margin-bottom: 7px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #585858;
+    @extend %DMSans-400;
+  }
+}

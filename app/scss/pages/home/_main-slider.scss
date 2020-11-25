@@ -1,4 +1,4 @@
-.slider {
+.main-slider {
   &__inner {
     padding: 217px 0 45px;
     background-color: $bg-color;
@@ -33,17 +33,36 @@
     font-size: 18px;
     line-height: 1.6;
     color: #436372;
-    @extend %rubik-400;
   }
 
   &__btn {
     background-color: $accent-color;
     padding: 21px 101px 21px 28px;
+
     font-size: 15px;
     line-height: 1.2;
     color: $white-color;
     @extend %rubik-500;
+
     position: relative;
+    transition: all 0.5s;
+
+    &:hover {
+      background-color: $default-color;
+      transition: all 0.5s;
+
+      animation: pulse 1s infinite;
+
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 0 0 0px rgba(163, 187, 200, 0.514);
+        }
+
+        10% {
+          box-shadow: 0 0 0 5px rgba(4, 20, 20, 0.041);
+        }
+      }
+    }
 
     &::before {
       content: url(../images/icons/arrow.svg);
@@ -77,76 +96,25 @@
         border-radius: 50%;
         cursor: pointer;
         @extend %rubik-500;
+        transition: all 0.3s;
+        outline: transparent;
+
+        &:hover {
+          background-color: $accent-color;
+          color: #fff;
+          transition: all 0.3s;
+        }
       }
 
       &.slick-active {
         button {
           background-color: $white-color;
+
+          &:hover {
+            color: #000;
+          }
         }
       }
     }
-  }
-
-  &__info {
-    display: flex;
-    justify-content: space-around;
-    background-color: #fef7f0;
-    padding: 38px 0px 37px 0;
-    margin-bottom: 65px;
-  }
-
-  &__info-item {
-    padding-left: 61px;
-    max-width: 274px;
-    position: relative;
-
-    &+&::after {
-      content: "";
-      position: absolute;
-      border-left: 1px solid #e8e4df;
-      height: 169px;
-      left: -167px;
-      top: -38px;
-    }
-
-    &--support::before {
-      background-image: url(../../images/icons/support.svg);
-      width: 51px;
-      height: 53px;
-    }
-
-    &--delivery::before {
-      background-image: url(../../images/icons/delivery.svg);
-      width: 54px;
-      height: 36px;
-    }
-
-    &--pay::before {
-      background-image: url(../../images/icons/pay.svg);
-      width: 54px;
-      height: 53px;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 9px;
-      left: -16px;
-    }
-  }
-
-  &__info-title {
-    font-size: 18px;
-    line-height: 1.8;
-    @extend %DMSans-700;
-    color: #414141;
-    margin-bottom: 7px;
-  }
-
-  &__info-text {
-    font-size: 16px;
-    line-height: 1.7;
-    color: #585858;
-    @extend %DMSans-400;
   }
 }
