@@ -40,6 +40,7 @@
     background-color: $white-color;
     border-radius: 50%;
     padding: 24px 8px 4px 9px;
+    transition: 0.5s;
 
     &:hover {
       background-color: $accent-color;

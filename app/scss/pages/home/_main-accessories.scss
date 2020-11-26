@@ -12,7 +12,7 @@
     padding-bottom: 77px;
     margin-bottom: 100px;
 
-    & + & {
+    &+& {
       margin-left: 30px;
     }
   }
@@ -47,11 +47,18 @@
     color: #436372;
     @extend %rubik-500;
 
+    &:hover::before {
+      transform: translateX(15px);
+      
+    }
+
     &::before {
       content: url(../images/icons/arrow-2.svg);
       position: absolute;
       right: 19px;
       top: 21px;
+
+      transition: transform 0.2s;
     }
   }
 }
