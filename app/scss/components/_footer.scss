@@ -62,6 +62,10 @@
 
   &__link {
     font-size: 14px;
+
+    &:hover {
+      border-bottom: 1px solid $grey-color;
+    }
   }
 
   &__text {
@@ -135,7 +139,7 @@
   &__bottom-item {
     color: $grey-color;
 
-    & + & {
+    &+& {
       margin-left: 30px;
       position: relative;
     }

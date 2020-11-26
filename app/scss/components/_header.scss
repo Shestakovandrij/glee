@@ -51,11 +51,24 @@
       margin-left: 18px;
       background-color: #a3bbc8;
       border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.5s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
 
     &--cart {
       margin: 20px 42px 0px 59px;
       position: relative;
+
+      transition: transform 0.5s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
 
       &::before {
         content: "";
@@ -69,12 +82,26 @@
 
     &--heart {
       margin-top: 20px;
+
+      transition: transform 0.5s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
 
     &--search {
       background-color: #edf1f4;
-      padding: 18px 20px 0px 16px;
+      padding: 2px 20px 0px 16px;
+      border: none;
       border-radius: 50%;
+
+      cursor: pointer;
+      transition: transform 0.5s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 
