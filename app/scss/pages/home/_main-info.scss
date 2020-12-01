@@ -13,7 +13,7 @@
     max-width: 274px;
     position: relative;
 
-    &+&::after {
+    & + &::after {
       content: "";
       position: absolute;
       border-left: 1px solid #e8e4df;
