@@ -9,6 +9,20 @@
     margin-bottom: 45px;
   }
 
+  &__link {
+    transition: all 0.5s;
+
+    &:hover {
+      transform: translateX(15px);
+    }
+  }
+
+  &__icon {
+    padding-left: 22px;
+    width: 28px;
+    height: 11px;
+  }
+
 
   &__items {
     display: grid;

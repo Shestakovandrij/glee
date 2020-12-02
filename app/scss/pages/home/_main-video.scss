@@ -8,18 +8,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  
+
+
   &__link {
     background-color: $accent-color;
     border-radius: 50%;
-    
+
     padding: 30px 37px;
-    
-    transition: all 1.5s;
+
+    transition: animation 1.5s;
+
     &:hover {
-      animation: pulse 2s infinite;
-      transition: all 1.5s;
+      animation: pulse 5s infinite;
     }
   }
 
