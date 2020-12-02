@@ -3,10 +3,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 380px;
   box-shadow: 0 5px 50px #f9f9f9;
   position: relative;
-  padding: 65px 0 25px 0px;
+  padding: 55px 0 40px 0;
+
+  &__img {
+    margin-bottom: 33px;
+  }
 
   &:hover .product-cart__links {
     opacity: 1;
@@ -25,7 +28,7 @@
     line-height: 1.7;
   }
 
-  &__link-img {
+  &__icon {
     width: 25px;
     height: 25px;
     fill: $accent-color;
@@ -36,7 +39,6 @@
     transition: opacity 0.3s;
     position: absolute;
     bottom: 147px;
-    
   }
 
   &__link {
@@ -46,6 +48,7 @@
     padding: 15px 15px 10px 15px;
     transition: 0.5s;
     cursor: pointer;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
 
     &--search {
       padding: 26px 15px 13px 15px;
@@ -55,12 +58,12 @@
       background-color: $accent-color;
     }
 
-    &:hover .product-cart__link-img {
+    &:hover .product-cart__icon {
       fill: $white-color;
     }
 
-    &+& {
-      margin-left: 16px;
+    &:not(:last-child) {
+      margin-right: 16px;
     }
   }
 }

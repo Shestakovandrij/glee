@@ -52,16 +52,6 @@
       transition: all 0.5s;
 
       animation: pulse 1s infinite;
-
-      @keyframes pulse {
-        0% {
-          box-shadow: 0 0 0 0px rgba(163, 187, 200, 0.514);
-        }
-
-        10% {
-          box-shadow: 0 0 0 5px rgba(4, 20, 20, 0.041);
-        }
-      }
     }
 
     &::before {

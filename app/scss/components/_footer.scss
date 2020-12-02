@@ -1,4 +1,6 @@
 .footer {
+  padding-bottom: 30px;
+
   &__top {
     display: flex;
 
@@ -86,9 +88,17 @@
     border: none;
     padding: 8px 17px;
 
+    transition: all 0.5s;
+
     &::placeholder {
       color: #234969;
       font-size: 12px;
+    }
+
+    &:focus {
+      transform: scale(1.1);
+      background-color: $bg-color;
+      border: 1px solid $accent-color;
     }
   }
 
@@ -99,23 +109,13 @@
     color: #fff;
     font-size: 14px;
 
-    padding: 10px 18px 10px 16px;
+    padding: 10px 18px 8px 16px;
     margin-left: -4px;
 
     cursor: pointer;
 
     &:hover {
       animation: pulse 1s infinite;
-
-      @keyframes pulse {
-        0% {
-          box-shadow: 0 0 0 0px rgba(163, 187, 200, 0.514);
-        }
-
-        10% {
-          box-shadow: 0 0 0 5px rgba(4, 20, 20, 0.041);
-        }
-      }
     }
   }
 
@@ -138,18 +138,18 @@
   &__bottom-item {
     color: $grey-color;
 
-    &+& {
-      margin-left: 30px;
+    &:not(:last-child) {
+      margin-right: 30px;
       position: relative;
-    }
 
-    &+&::before {
-      content: "";
-      border-left: 1px solid $grey-color;
-      position: absolute;
-      height: 14px;
-      top: 3px;
-      left: -17px;
+      &::before {
+        content: "";
+        border-right: 1px solid $grey-color;
+        position: absolute;
+        height: 14px;
+        top: 3px;
+        right: -17px;
+      }
     }
   }
 

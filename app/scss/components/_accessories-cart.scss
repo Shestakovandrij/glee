@@ -42,11 +42,6 @@
     color: #436372;
     @extend %rubik-500;
 
-    &:hover::before {
-      transform: translateX(15px);
-
-    }
-
     &::before {
       content: url(../images/icons/arrow-2.svg);
       position: absolute;
@@ -55,5 +50,12 @@
 
       transition: transform 0.2s;
     }
+
+    &:hover {
+      &::before {
+        transform: translateX(15px);
+      }
+    }
+
   }
 }
