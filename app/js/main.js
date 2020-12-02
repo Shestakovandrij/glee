@@ -13,9 +13,9 @@ $(function(){
       control: '.product__btn'
     }
   });
-  var mixer = mixitup('.new-product__items', {
+  var mixer = mixitup('.new-design__items', {
     selectors: {
-      control: '.new-product__btn'
+      control: '.new-design__btn'
     }
   });
 

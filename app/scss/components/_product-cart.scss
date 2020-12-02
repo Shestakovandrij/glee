@@ -12,9 +12,11 @@
     opacity: 1;
   }
 
-  &__item-title {
-    margin-top: auto;
+  &__title {
+    font-size: 16px;
     @extend %DMSans-500;
+
+    margin-top: auto;
   }
 
   &__price {

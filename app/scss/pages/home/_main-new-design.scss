@@ -1,11 +1,11 @@
-.new-product {
+.new-design {
   &__title {
     text-align: center;
 
     margin-bottom: 20px;
   }
 
-  &__filter-btn {
+  &__filters {
     text-align: center;
 
     margin-bottom: 75px;
@@ -78,44 +78,7 @@
     margin-bottom: 120px;
   }
 
-  &__item {
-    padding: 34px 139px 127px 35px;
 
-    background-color: #f8f8f8;
-    position: relative;
-  }
-
-  &__link {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 2;
-  }
-
-  &__name {
-    font-size: 20px;
-    @extend %DMSans-700;
-
-    margin-bottom: 10px;
-  }
-
-  &__class {
-    color: $accent-color;
-    @extend %DMSans-700;
-  }
-
-  &__img {
-    position: absolute;
-    right: 0;
-    top: 39%;
-
-    &--chair {
-      right: 32px;
-      top: 20%;
-    }
-  }
 }
 
 .mixitup-control-active {
