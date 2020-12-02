@@ -113,9 +113,10 @@
     margin-left: -4px;
 
     cursor: pointer;
+    transition: all 0.5s;
 
     &:hover {
-      animation: pulse 1s infinite;
+      animation: pulse 1.5s infinite;
     }
   }
 

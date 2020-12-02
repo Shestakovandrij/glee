@@ -27,6 +27,8 @@
     position: relative;
     overflow: hidden;
 
+    transition: all 0.5s;
+
     &::before {
       content: '';
       position: absolute;
@@ -34,16 +36,15 @@
       left: -100%;
       width: 100%;
       height: 4px;
-      border-radius: 50%;
+      border-radius: 25px;
       background: $grey-color;
-      transition: 0.5s;
     }
 
     &:hover {
       color: #fff;
 
-      &::before {
-        animation: animate .5s linear forwards;
+      &::before {        
+        animation: animate 0.5s linear forwards;
       }
     }
 
