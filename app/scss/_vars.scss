@@ -5,7 +5,12 @@ $grey-color: #7b7b7b;
 $bg-color: #fcd7b6;
 $white-color: #fff;
 $btn-color: #b3b7b5;
+$form-color: #436372;
 
+%rubik-300 {
+  font-family: 'Rubik-ligth', sans-serif;
+  font-weight: 300;
+}
 %rubik-400 {
   font-family: 'Rubik-Regular', sans-serif;
   font-weight: 400;

@@ -1,0 +1,32 @@
+.breadcrumbs {
+  font-size: 14px;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    line-height: 1.5;
+    color: rgba(34, 41, 51, 0.6);
+    position: relative;
+
+    &::after {
+      content: '/';
+      position: absolute;
+      right: -14px;
+    }
+
+    &:last-child {
+      color: $accent-color;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 22px;
+    }
+  }
+}
