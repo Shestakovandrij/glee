@@ -1,6 +1,4 @@
 .promo {
-  padding-top: 110px;
-
   &__top {
     display: flex;
     justify-content: space-between;
@@ -10,6 +8,7 @@
   }
 
   &__link {
+    @extend %DMSans-700;
     transition: all 0.5s;
 
     &:hover {
