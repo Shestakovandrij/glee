@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>glee</title>
+  <title>Glee | Log in</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -74,9 +74,9 @@
   <main class="main">
     <section class="top">
       <div class="container">
-        <h2 class="top__title">
+        <h1 class="top__title">
           Log in
-        </h2>
+        </h1>
         <div class="breadcrumbs">
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
@@ -85,7 +85,7 @@
               </a>
             </li>
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">
+              <a class="breadcrumbs__link">
                 Log in
               </a>
             </li>
@@ -98,13 +98,13 @@
       <div class="container">
 
         <form action="#" class="login__form">
-          <label class="login__label" for="login__input-email">
+          <label class="login__label">
             <span class="login__label-scr">Username or email address *</span>
-            <input id="login__input-email" class="login__input" name="subscribe[email]" type="email" required>
+            <input class="login__input" name="subscribe[email]" type="email" required>
           </label>
-          <label class="login__label" for="login__input-password">
+          <label class="login__label">
             <span class="login__label-scr">Password *</span>
-            <input id="login__input-password" class="login__input" name="subscribe[email]" type="password" required>
+            <input class="login__input" name="subscribe[Password]" type="password" required>
           </label>
           <button class="login__btn" type="submit">
             Login
@@ -120,12 +120,12 @@
             </a>
           </div>
 
-          <a class="login__link-reg" href="#">
+          <p class="login__link-reg">
             Not registered? No problem
-          </a>
-          <button class="login__button" type="submit">
+          </p>
+          <a class="login__button">
             <span>Create an account</span>
-          </button>
+          </a>
         </form>
 
       </div>
@@ -133,13 +133,23 @@
 
     <div class="partners">
       <div class="container">
-        <div class="partners__items">
-          <img class="partners__item" src="images/partners/logo_partner-1.png" alt="partners">
-          <img class="partners__item" src="images/partners/logo_partner-2.png" alt="partners">
-          <img class="partners__item" src="images/partners/logo_partner-3.png" alt="partners">
-          <img class="partners__item" src="images/partners/logo_partner-4.png" alt="partners">
-          <img class="partners__item" src="images/partners/logo_partner-5.png" alt="partners">
-        </div>
+        <ul class="partners__list">
+          <li class="partners__item">
+            <img class="partners__img" src="images/partners/logo_partner-1.png" alt="partners">
+          </li>
+          <li class="partners__item">
+            <img class="partners__img" src="images/partners/logo_partner-2.png" alt="partners">
+          </li>
+          <li class="partners__item">
+            <img class="partners__img" src="images/partners/logo_partner-3.png" alt="partners">
+          </li>
+          <li class="partners__item">
+            <img class="partners__img" src="images/partners/logo_partner-4.png" alt="partners">
+          </li>
+          <li class="partners__item">
+            <img class="partners__img" src="images/partners/logo_partner-5.png" alt="partners">
+          </li>
+        </ul>
       </div>
     </div>
   </main>
@@ -153,16 +163,16 @@
             <img class="logo__img" src="images/logo.png" alt="logo">
           </a>
           <address class="footer__address">
-            <p class="footer__item-text">Address:</p>
+            <span class="footer__item-text">Address:</span>
             <a class="footer__item-address" href="#">
               4772 Wines Lane
               Houston, TX 77032
             </a>
-            <p class="footer__item-text">Telephone:</p>
+            <span class="footer__item-text">Telephone:</span>
             <a class="footer__item-address" href="tel:+8323475843">
               +832-347-5843
             </a>
-            <p class="footer__item-text">Email:</p>
+            <span class="footer__item-text">Email:</span>
             <a class="footer__item-address" href="mailto:contact@Glee.com">
               contact@Glee.com
             </a>
@@ -235,9 +245,9 @@
             Subscribe by our newsletter and get update protidin.
           </p>
           <form class="footer__form" action="#">
-            <label class="footer__label" for="footer__input">
+            <label class="footer__label">
               <span class="footer__label-scr">Email address</span>
-              <input id="footer__input" class="footer__input" name="subscribe[email]" type="email"
+              <input class="footer__input" name="subscribe[email]" type="email"
                 placeholder="Email address" required>
             </label>
             <button class="footer__btn" type="submit">
