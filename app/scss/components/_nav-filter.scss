@@ -1,0 +1,36 @@
+.nav-filter {
+  &__btn {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    @extend %DMSans-700;
+    color: $grey-color;
+    position: relative;
+    overflow: hidden;
+
+    transition: all 0.5s;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: calc(50% - 2px);
+      left: -100%;
+      width: 100%;
+      height: 4px;
+      border-radius: 25px;
+      background: $grey-color;
+    }
+
+    &:hover {
+      color: #fff;
+
+      &::before {
+        animation: animate 0.5s linear forwards;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}

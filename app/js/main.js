@@ -10,12 +10,12 @@ $(function(){
 
   var mixer = mixitup('.product__items', {
     selectors: {
-      control: '.product__btn'
+      control: '.nav-filter__btn'
     }
   });
   var mixer = mixitup('.new-design__items', {
     selectors: {
-      control: '.new-design__btn'
+      control: '.nav-filter__btn'
     }
   });
 
