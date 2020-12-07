@@ -20,23 +20,22 @@
     &--mb {
       margin-bottom: 55px;
     }
+  }
 
-    position: relative;
+  &__class {
+    text-transform: uppercase;
+    background-color: $accent-color;
+    border-radius: 25px;
 
-    &::before {
-      content: 'news';
-      text-transform: uppercase;
-      background-color: $accent-color;
-      border-radius: 25px;
-      padding: 8px 31px;
-      position: absolute;
-      top: -20px;
-      left: 28px;
+    padding: 8px 31px;
 
-      font-size: 14px;
-      color: #fff;
-      @extend %DMSans-700;
-    }
+    font-size: 14px;
+    color: #fff;
+    @extend %DMSans-700;
+
+    position: absolute;
+    top: 54%;
+    left: 8%;
   }
 
   &__links {

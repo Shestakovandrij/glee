@@ -6,11 +6,29 @@ const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const del = require('del');
 const browserSync = require('browser-sync').create();
+const fileinclude = require('gulp-file-include');
+const gulp = require('gulp');
+
+function html() {
+
+  return src(["app/html/pages/*.html", "!app/html/components/_*.html"])
+  .pipe(
+    fileinclude({
+      prefix: "@@",
+      basepath: "app/",
+    })
+  )
+  .pipe(dest("app/"))
+  .pipe(browserSync.stream())
+  
+}
+
+
 
 function browsersync() {
   browserSync.init({
     server: {
-      baseDir: 'app/'
+      baseDir: 'app'
     },
     notify: false
   })
@@ -75,6 +93,7 @@ function cleanDist() {
 }
 
 function watching() {
+  watch(['app/html/**/*'], html);
   watch(['app/scss/**/*.scss'], styles);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
   watch(['app/**/*.html']).on('change', browserSync.reload);
@@ -83,10 +102,11 @@ function watching() {
 exports.styles = styles;
 exports.scripts = scripts;
 exports.browsersync = browsersync;
+exports.html = html;
 exports.watching = watching;
 exports.images = images;
 exports.cleanDist = cleanDist;
 exports.build = series(cleanDist, images, build);
 
-exports.default = parallel(styles, scripts, browsersync, watching);
+exports.default = parallel(html, styles, scripts, browsersync, watching);
 
