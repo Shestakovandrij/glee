@@ -43,3 +43,15 @@ $form-color: #436372;
 @function min($numbers...) {
   @return m#{i}n(#{$numbers});
 }
+
+@mixin r($width) {
+  @media only screen and (max-width: $width+ "px") {
+    @content;
+  }
+}
+
+@mixin rmin($width) {
+  @media only screen and (min-width: $width+ "px") {
+    @content;
+  }
+}

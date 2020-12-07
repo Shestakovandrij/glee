@@ -1,11 +1,16 @@
 $(function(){
 
+  
   $('.main-slider__inner').slick({
     dots: true,
     arrows: false,
     autoplay: true,
     autoplaySpeed:4000,
     fade: true
+  });
+
+  $('.menu__btn').on('click', function(){
+    $('.header__inner').toggleClass('header__inner--active')
   });
 
   var mixer = mixitup('.product__items', {
@@ -18,5 +23,7 @@ $(function(){
       control: '.new-design__filters > .nav-filter__btn'
     }
   });
+  
+  
 
 });
