@@ -10,6 +10,10 @@
 
     transition: all 0.5s;
 
+    @include r(575) {
+      font-size: 14px;
+    }
+
     &::before {
       content: '';
       position: absolute;
@@ -31,6 +35,10 @@
 
     &:not(:last-child) {
       margin-right: 30px;
+
+      @include r(575) {
+        margin-right: 10px;
+      }
     }
   }
 }

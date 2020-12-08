@@ -2,5 +2,9 @@
   &__inner {
     display: flex;
     justify-content: space-around;
+
+    @include r(991) {
+      flex-wrap: wrap;
+    }
   }
 }

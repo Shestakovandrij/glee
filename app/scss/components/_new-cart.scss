@@ -31,6 +31,12 @@
     margin-bottom: 10px;
 
     transition: all 0.5s;
+
+    @include r(768) {
+      font-size: 16px;
+
+      margin-bottom: 5px;
+    }
   }
 
   &__class {
@@ -43,9 +49,17 @@
     right: 0;
     top: 39%;
 
+    @include r(1199) {
+      top: 50%;
+    }
+
     &--chair {
       right: 32px;
       top: 20%;
+
+      @include r(575) {
+        top: 27%;
+      }
     }
   }
 }

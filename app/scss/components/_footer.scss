@@ -7,11 +7,25 @@
     margin-bottom: 32px;
     padding-bottom: 62px;
     border-bottom: 1px solid #dae4e9;
+
+    @include r(1199) {
+      flex-wrap: wrap;
+    }
+
+    @include r(575) {
+      flex-direction: column;
+
+      padding-bottom: 28px;
+    }
   }
 
   &__contact {
     max-width: 205px;
     margin-right: 95px;
+
+    @include r(1199) {
+      margin-right: auto;
+    }
   }
 
   &__logo {
@@ -36,6 +50,10 @@
 
   &__nav {
     margin-right: 181px;
+
+    @include r(991) {
+      margin-right: 84px;
+    }
   }
 
   &__form {
@@ -124,12 +142,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include r(575) {
+      flex-direction: column;
+    }
   }
 
   &__bottom-copy {
     font-size: 14px;
     line-height: 1.2;
     @extend %rubik-400;
+
+    @include r(575) {
+      margin-bottom: 20px;
+    }
   }
 
   &__bottom-list {

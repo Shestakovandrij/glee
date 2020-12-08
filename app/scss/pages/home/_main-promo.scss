@@ -11,6 +11,11 @@
     @extend %DMSans-700;
     transition: all 0.5s;
 
+    @include r(575) {
+      font-size: 14px;
+      padding-right: 5px;
+    }
+
     &:hover {
       transform: translateX(15px);
     }
@@ -29,25 +34,17 @@
     grid-gap: 30px;
 
     margin-bottom: -171px;
+
+    @include r(991) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include r(575) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &__partners {
     padding: 260px 0 90px;
   }
 }
-
-
-
-// .main-partners {
-//   background-color: #fef7f0;
-
-//   margin-bottom: 80px;
-
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-
-//   &__img {
-//     padding: 271px 50px 81px 50px;
-//   }
-// }

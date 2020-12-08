@@ -5,8 +5,16 @@
   position: relative;
   transition: transform 0.5s;
 
+  @include r(991) {
+    max-width: 389px;
+  }
+
   &:hover {
     transform: scale(1.1);
+  }
+
+  &__span {
+    position: relative;
   }
 
   &__title {
@@ -34,8 +42,12 @@
     @extend %DMSans-700;
 
     position: absolute;
-    top: 54%;
-    left: 8%;
+    bottom: -11px;
+    left: 40px;
+
+    @include r(768) {
+      padding: 5px 21px;
+    }
   }
 
   &__links {
@@ -45,6 +57,10 @@
     font-size: 12px;
     line-height: 1.2;
     color: #222933;
+
+    @include r(991) {
+      justify-content: space-around;
+    }
 
 
     &::before {
@@ -72,6 +88,10 @@
     margin: 0 45px;
     transition: all 0.5s;
     text-transform: uppercase;
+
+    @include r(991) {
+      margin: 0;
+    }
 
     &:hover {
       color: $accent-color;
