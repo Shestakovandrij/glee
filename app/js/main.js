@@ -8,7 +8,7 @@ $(function(){
     autoplaySpeed:4000,
     fade: true
   });
-
+  
   $('.menu__btn').on('click', function(){
     $('.header__inner').toggleClass('header__inner--active')
   });
