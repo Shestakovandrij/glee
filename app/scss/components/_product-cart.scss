@@ -5,10 +5,11 @@
   justify-content: center;
   box-shadow: 0 5px 50px #f9f9f9;
   position: relative;
-  padding: 55px 0 40px 0;
+  padding: 55px 10px 40px;
 
   &__img {
     margin-bottom: 33px;
+    max-width: 235px;
   }
 
   &:hover .product-cart__links {
@@ -20,6 +21,17 @@
     @extend %DMSans-500;
 
     margin-top: auto;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -ms-line-clamp: 2;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    display: -webkit-box;
+    display: box;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
   }
 
   &__price {

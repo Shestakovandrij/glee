@@ -25,9 +25,26 @@
     padding: 31px 50px 0 30px;
     margin-bottom: 35px;
 
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -ms-line-clamp: 3;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    display: -webkit-box;
+    display: box;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+
     &--mb {
       margin-bottom: 55px;
     }
+  }
+
+  &__img {
+    max-height: 250px;
+    width: 100%;
+
   }
 
   &__class {
@@ -86,21 +103,43 @@
 
   &__date {
     margin: 0 45px;
-    transition: all 0.5s;
+    transition: color 0.5s;
     text-transform: uppercase;
+    position: relative;
 
-    @include r(991) {
-      margin: 0;
+    &::before {
+      content: url(../../images/icons/calendar.svg);
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      left: -22px;
+      bottom: 0;
     }
 
     &:hover {
       color: $accent-color;
     }
+
+    @include r(991) {
+      margin: 0;
+    }
+
   }
 
   &__author {
     text-transform: uppercase;
-    transition: all 0.5s;
+    transition: color 0.5s;
+
+    position: relative;
+
+    &::before {
+      content: url(../../images/icons/user.svg);
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      left: -22px;
+      bottom: 0;
+    }
 
     &:hover {
       color: $accent-color;

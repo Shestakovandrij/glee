@@ -38,6 +38,8 @@
   &__img {
     background-size: cover;
     margin: -90px 40px 0 0;
+    max-width: 100%;
+    max-height: 410px;
 
     @include r(1199) {
       margin: -90px auto 0;
@@ -72,6 +74,17 @@
   &__text {
     line-height: 1.9;
     margin-bottom: 46px;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -ms-line-clamp: 2;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    display: -webkit-box;
+    display: box;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
 
     @include r(991) {
       max-width: 546px;
