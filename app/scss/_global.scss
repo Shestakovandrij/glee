@@ -33,6 +33,32 @@ a {
   outline: transparent;
 }
 
+.btn {
+  background-color: $accent-color;
+  padding: 21px 101px 21px 28px;
+
+  font-size: 15px;
+  line-height: 1.2;
+  color: $white-color;
+  @extend %rubik-500;
+
+  position: relative;
+  transition: animation background-color 0.5s;
+
+  &:hover {
+    background-color: $default-color;
+    transition: all 0.5s;
+    animation: pulse 1.5s infinite;
+  }
+
+  &::before {
+    content: url(../images/icons/arrow.svg);
+    position: absolute;
+    right: 19px;
+    top: 21px;
+  }
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
