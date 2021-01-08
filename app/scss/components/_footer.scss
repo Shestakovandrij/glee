@@ -151,6 +151,7 @@
   &__bottom-copy {
     font-size: 14px;
     line-height: 1.2;
+    color: $grey-color;
     @extend %rubik-400;
 
     @include r(575) {

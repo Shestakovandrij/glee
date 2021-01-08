@@ -1,4 +1,10 @@
 .header {
+  // position: fixed;
+  // top: 0;
+  // right: 0;
+  // left: 0;
+  // z-index: 999;
+
   padding-top: 48px;
   margin-bottom: 44px;
 
@@ -15,6 +21,7 @@
     justify-content: space-between;
     align-items: center;
 
+
     @include r(575) {
       flex-wrap: wrap;
     }
@@ -29,6 +36,7 @@
   &__logo {
     margin-right: 156px;
     z-index: 11;
+
 
     @include r(991) {
       margin-right: 0;
@@ -94,7 +102,6 @@
   }
 
   &__item {
-
 
     &:not(:last-child) {
       margin-right: 35px;

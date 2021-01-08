@@ -63,21 +63,26 @@
 }
 
 .filter-price {
+  margin-bottom: 81px;
   &__label {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+  }
+
+  &__from {
+    margin-right: auto;
   }
 }
 
 .irs--flat .irs-line {
-  top: 30px;
+  top: 12px;
   height: 1px;
   background-color: #c2d2db;
   border-radius: 0;
 }
 
 .irs--flat .irs-handle {
-  top: 22px;
+  top: 5px;
   width: 15px;
   height: 15px;
   background-color: $accent-color;
@@ -90,7 +95,7 @@
 .irs-from,
 .irs-to,
 .irs-single {
-  display: block;
+  display: none;
 }
 
 .irs--flat .irs-min,
@@ -99,7 +104,30 @@
 }
 
 .irs--flat .irs-bar {
-  top: 29px;
+  top: 11px;
   height: 3px;
   background-color: $accent-color;
+}
+
+.filter-brand {
+  &__btn {
+    width: 100%;
+    color: $default-color;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px 11px 15px;
+    border-radius: 5px;
+
+    &:focus {
+      background-color: #edf1f4;
+    }
+  }
+
+  &__numb {
+    color: #b3b3b3;
+  }
 }
