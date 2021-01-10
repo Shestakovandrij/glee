@@ -1,5 +1,6 @@
 $(function(){
 
+  
   function scrollMenu() {
     let menu = document.querySelector('.header');
     window.addEventListener('scroll', () => {
@@ -13,11 +14,11 @@ $(function(){
     });
   }
   scrollMenu();
-
+  
   $('.filter-price__input').ionRangeSlider({
     type: "double",
     prefix: "$",
-
+    
     onStart: function (data)  {
       $('.filter-price__from').text(data.from);
       $('.filter-price__to').text(data.to);
@@ -25,10 +26,13 @@ $(function(){
     onChange: function (data) {
       $('.filter-price__from').text(data.from);
       $('.filter-price__to').text(data.to);
-        },
-
+    },
+    
   });
-
+  
+  $(".filter-rating__rat").rateYo({
+    rating: 3.6
+  });
   
   $('.main-slider__inner').slick({
     dots: true,

@@ -131,3 +131,15 @@
     color: #b3b3b3;
   }
 }
+
+.filter-rating {
+  &__item {
+    display: flex;
+  }
+
+  &__img {
+    max-width: 57px;
+    max-height: 63px;
+    border: 1px solid #f2f2f2;
+  }
+}
