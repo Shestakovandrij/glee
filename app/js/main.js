@@ -30,7 +30,7 @@ $(function(){
     
   });
   
-  $(".filter-rating__rat").rateYo({
+  $(".star").rateYo({
     rating: 3.6,
     starWidth: "15px"
   });
