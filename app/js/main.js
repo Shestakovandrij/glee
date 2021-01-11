@@ -31,7 +31,8 @@ $(function(){
   });
   
   $(".filter-rating__rat").rateYo({
-    rating: 3.6
+    rating: 3.6,
+    starWidth: "15px"
   });
   
   $('.main-slider__inner').slick({
