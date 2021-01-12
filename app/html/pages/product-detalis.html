@@ -95,77 +95,99 @@
     </section>
 
     <section class="product-detalis">
-      <div class="product-item">
-        <div class="product-item__inner">
-          <div class="product-item__slide product-slide">
-            <div class="product-slide__thumb">
-              <div class="product-slide__thumb-item">
-                <img class="product-slide__thumb-img" src="images/product-detalis/1.jpg" alt="image poduct">
+      <div class="container">
+        <div class="product-item">
+          <div class="product-item__inner">
+            <div class="product-item__slide product-slide">
+              <div class="product-slide__thumb">
+                <div class="product-slide__thumb-item">
+                  <img class="product-slide__thumb-img" src="images/product-detalis/1.jpg" alt="image poduct">
+                </div>
+                <div class="product-slide__thumb-item">
+                  <img class="product-slide__thumb-img" src="images/product-detalis/1.jpg" alt="image poduct">
+                </div>
+                <div class="product-slide__thumb-item">
+                  <img class="product-slide__thumb-img" src="images/product-detalis/1.jpg" alt="image poduct">
+                </div>
               </div>
-              <div class="product-slide__thumb-item">
-                <img class="product-slide__thumb-img" src="images/product-detalis/2.jpg" alt="image poduct">
-              </div>
-              <div class="product-slide__thumb-item">
-                <img class="product-slide__thumb-img" src="images/product-detalis/3.jpg" alt="image poduct">
+              <div class="product-slide__origin">
+                <div class="product-slide__origin-item">
+                  <img class="product-slide__origin-img" src="images/product-detalis/1.jpg" alt="image poduct">
+                </div>
+                <div class="product-slide__origin-item">
+                  <img class="product-slide__origin-img" src="images/product-detalis/1.jpg" alt="image poduct">
+                </div>
+                <div class="product-slide__origin-item">
+                  <img class="product-slide__origin-img" src="images/product-detalis/1.jpg" alt="image poduct">
+                </div>
               </div>
             </div>
-            <div class="product-slide__origin">
-              <div class="product-slide__origin-item">
-                <img class="product-slide__origin-img" src="images/product-detalis/1.jpg" alt="image poduct">
+            <div class="product-item__content">
+              <h2 class="product-item__title">
+                Pendant lamp
+              </h2>
+              <div class="product-item__rat" data-rateyo-rating="4"></div>
+              <span class="product-item__cost">23$</span>
+              <p class="product-item__text">
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              </p>
+
+              <form class="product-item__form" action="#">
+                <label class="product-item__label">
+                  <input class="product-item__numb" type="number" value="1" min="1">
+                </label>
+              </form>
+              <button class="product-item__btn" type="submit">
+                add to cart
+              </button>
+
+
+              <div class="product-item__info">
+                <ul class="product-item__list">
+                  <li class="product-item__item">
+                    <span class="product-item__name">SKU:</span>
+                    <span class="product-item__desc">014</span>
+                  </li>
+                  <li class="product-item__item">
+                    <span class="product-item__name">Category:</span>
+                    <a class="product-item__desc" href="#">Lights</a>
+                  </li>
+                  <li class="product-item__item">
+                    <span class="product-item__name">Tag:</span>
+                    <a class="product-item__desc" href="#">Decorative</a>
+                  </li>
+                </ul>
               </div>
-              <div class="product-slide__origin-item">
-                <img class="product-slide__origin-img" src="images/product-detalis/2.jpg" alt="image poduct">
-              </div>
-              <div class="product-slide__origin-item">
-                <img class="product-slide__origin-img" src="images/product-detalis/3.jpg" alt="image poduct">
-              </div>
-            </div>
-          </div>
-          <div class="product-item__content">
-            <h2 class="product-item__title">
-              Pendant lamp
-            </h2>
-            <div class="product-item__rat star" data-rateyo-rating="4"></div>
-            <span class="product-item__cost">23$</span>
-            <p class="product-item__text">
-              consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-              ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            </p>
-
-            <form class="product-item__form" action="#">
-              <label class="product-item__label">
-                <input class="product-item__numb" type="number">
-              </label>
-            </form>
-
-            <button class="product-item__btn">
-              add to cart
-            </button>
-
-
-            <div class="product-item__info">
-              <ul class="product-item__list">
-                <li class="product-item__item">
-                  <span class="product-item__name">SKU:</span>
-                  <span class="product-item__desc">014</span>
-                </li>
-                <li class="product-item__item">
-                  <span class="product-item__name">Category:</span>
-                  <span class="product-item__desc">Lights</span>
-                </li>
-                <li class="product-item__item">
-                  <span class="product-item__name">Tag:</span>
-                  <span class="product-item__desc">Decorative</span>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="product-tabs">
-
+        <div class="product-tabs">
+          <div class="product-tabs__tab">
+            <a class="product-tabs__link product-tabs__link--active" href="#tab-1">
+              Description
+            </a>
+            <a class="product-tabs__link" href="#tab-2">
+              Additional information
+            </a>
+            <a class="product-tabs__link" href="#tab-3">
+              Reviews <span>(2)</span>
+            </a>
+          </div>
+          <div class="product-tabs__content">
+            <div class="product-tabs__item product-tabs__item--active" id="tab-1">
+              consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="product-tabs__item" id="tab-2">
+              consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+            </div>
+            <div class="product-tabs__item" id="tab-3">
+              consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
