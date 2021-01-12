@@ -1,17 +1,15 @@
 $(function(){
 
+  $('.product-tabs__link').on('click', function(e){
+    e.preventDefault();
+    $('.product-tabs__link').removeClass('product-tabs__link--active');
+    $(this).addClass('product-tabs__link--active');
+
+    $('.product-tabs__item').removeClass('product-tabs__item--active');
+    $($(this).attr('href')).addClass('product-tabs__item--active');
+  });
+
   $('.product-item__numb').styler();
-
-  $('.product-tabs__content').each(function() {
-			height = height > $(this).outerHeight() ? height : $(this).outerHeight();
-         $(this).css('position', 'absolute');
-		});
-      
-      
-		$('[data-tabs]').css('min-height', height + 40 + 'px');
-
-  $('.product-item__numb').styler();
-
 
   $('.product-slide__thumb').slick({
     asNavFor:'.product-slide__origin',
@@ -27,6 +25,11 @@ $(function(){
     draggable: false,
     arrows: false,
     fade: true
+  });
+
+  $('.related__items').slick({
+    slidesToShow: 4,
+    
   });
   
   function scrollMenu() {
