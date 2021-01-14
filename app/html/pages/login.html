@@ -10,71 +10,7 @@
 
 <body>
 
-  <header class="header">
-    <div class="container container--lg">
-      <div class="header__inner">
-        <a class="logo header__logo" href="#">
-          <img class="logo__img" src="images/logo.png" alt="logo">
-        </a>
-        <nav class="menu">
-          <button class="menu__btn">
-            <svg class="menu__icon">
-              <use xlink:href="#menu"></use>
-            </svg>
-          </button>
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__link" href="#">Home +</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">About</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Services</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Pages +</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">News</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
-
-        <div class="user-nav">
-          <button class="user-nav__link user-nav__link--search" href="#">
-            <svg class="user-nav__img user-nav__img--search">
-              <use xlink:href="#search"></use>
-            </svg>
-          </button>
-          <div class="user-nav__items">
-            <a class="user-nav__link user-nav__link--heart" href="#">
-
-              <svg class="user-nav__img">
-                <use xlink:href="#heart"></use>
-              </svg>
-
-              <span class="user-nav__num">0</span>
-            </a>
-            <a class="user-nav__link user-nav__link--cart" href="#">
-              <svg class="user-nav__img">
-                <use xlink:href="#cart"></use>
-              </svg>
-              <span class="user-nav__num">0</span>
-            </a>
-          </div>
-          <button class="user-nav__link user-nav__link--dots" href="#">
-            <svg class="user-nav__img user-nav__img--dots">
-              <use xlink:href="#dots"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-  </header>
+  @@include('./html/components/header.html')
 
   <main class="main">
     <section class="top">
@@ -252,8 +188,7 @@
           <form class="footer__form" action="#">
             <label class="footer__label">
               <span class="footer__label-scr">Email address</span>
-              <input class="footer__input" name="subscribe[email]" type="email"
-                placeholder="Email address" required>
+              <input class="footer__input" name="subscribe[email]" type="email" placeholder="Email address" required>
             </label>
             <button class="footer__btn" type="submit">
               Subscribe
@@ -290,6 +225,13 @@
       </div>
     </div>
   </footer>
+  <svg display="none">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 -96 512 512" id="menu">
+      <path
+        d="M32 0h448c17.672 0 32 14.328 32 32s-14.328 32-32 32H32C14.328 64 0 49.672 0 32S14.328 0 32 0zm0 128h448c17.672 0 32 14.328 32 32s-14.328 32-32 32H32c-17.672 0-32-14.328-32-32s14.328-32 32-32zm0 128h448c17.672 0 32 14.328 32 32s-14.328 32-32 32H32c-17.672 0-32-14.328-32-32s14.328-32 32-32zm0 0"
+        fill="#82b1ff"></path>
+    </symbol>
+  </svg>
   <svg display="none">
     <symbol id="heart" viewBox="0 0 17.875 15.531">
       <path class="cls-1"
