@@ -36,7 +36,7 @@ $(function(){
     let menu = document.querySelector('.header');
     window.addEventListener('scroll', () => {
       if (pageYOffset >= document.documentElement.clientHeight / 15) {
-        menu.style['background-color'] = 'rgba(0, 0, 0, .85)'
+        menu.style['background-color'] = 'rgba(191, 191, 191, 0.796)'
         menu.style['height'] = '120px'
       } else {
         menu.style['background-color'] = 'transparent'

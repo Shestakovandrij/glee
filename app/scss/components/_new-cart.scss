@@ -59,7 +59,7 @@
     position: absolute;
     right: 0;
     top: 39%;
-    max-height: 180px;
+    max-height: 140px;
 
     @include r(1199) {
       top: 50%;
@@ -67,7 +67,7 @@
 
     &--chair {
       right: 32px;
-      top: 20%;
+      top: 40%;
 
       @include r(575) {
         top: 27%;
