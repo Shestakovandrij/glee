@@ -4,11 +4,11 @@ body {
 }
 
 body {
-  background-color: $white-color;
+  background-color: #fff;
 
   font-size: 16px;
   line-height: 1.3;
-  color: $default-color;
+  color: $black-color;
   @extend %rubik-400;
 
   display: flex;

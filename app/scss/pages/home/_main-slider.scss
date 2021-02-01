@@ -1,11 +1,11 @@
 .main-slider {
   padding-top: 145px;
+
   &__inner {
     padding: 208px 0 45px;
-    background-color: $bg-color;
-    background-image: url(../images/bg-gradient.png);
+    background-image: url(../images/bg-gradient.jpg);
     background-repeat: no-repeat;
-    background-position: 84%;
+    background-position: center;
     background-size: cover;
 
     @include r(1199) {
@@ -27,7 +27,7 @@
   }
 
   &__content {
-    margin: 0 0 229px 93px;
+    margin: 0 0 229px 45px;
     padding-left: 1px;
 
     @include r(1199) {
@@ -133,8 +133,7 @@
   }
 
   &__img {
-    max-height: 264px;
-    margin-top: 55px;
+    max-height: 400px;
 
     @include r(991) {
       margin: 0 auto 20px;
