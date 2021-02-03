@@ -3,6 +3,10 @@
   justify-content: center;
   padding: 142px 0 118px;
   margin-left: 26.5%;
+
+  @include r(1199) {
+    margin-left: 0;
+  }
   
   &__list {
     display: flex;

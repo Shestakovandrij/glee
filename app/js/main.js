@@ -81,6 +81,10 @@ $(function(){
     $('.header__inner').toggleClass('header__inner--active')
   });
 
+  $('.shop__btn').on('click', function(){
+    $('.shop__inner').toggleClass('shop__inner--active')
+  });
+
   var mixer = mixitup('.product__items', {
     selectors: {
       control: '.product__filters > .nav-filter__btn'
@@ -91,7 +95,6 @@ $(function(){
       control: '.new-design__filters > .nav-filter__btn'
     }
   });
-  
-  
+
 
 });

@@ -1,4 +1,10 @@
 .promo {
+
+  &__title {
+    @include r(575) {
+      font-size: 17px;
+    }
+  }
   &__top {
     display: flex;
     justify-content: space-between;
