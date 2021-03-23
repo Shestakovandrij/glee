@@ -1,0 +1,20 @@
+.menu {
+
+  &__list {
+    display: flex;
+    align-items: center;
+    margin-top: 23px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+}

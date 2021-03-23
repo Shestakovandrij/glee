@@ -1,44 +1,32 @@
-$accent-color: #9e9e9d;
-$default-color: #2d2e42;
-$black-color: #191919;
-$grey-color: #9B958F;
-$bg-color: #d6d0ca;
-$white-color: #F6F7F7;
-$btn-color: #7B7273;
-$form-color: #2F2F36;
+// $accent-color: #9e9e9d;
+// $default-color: #2d2e42;
+// $black-color: #191919;
+// $grey-color: #9B958F;
+// $bg-color: #d6d0ca;
+// $white-color: #F6F7F7;
+// $btn-color: #7B7273;
+// $form-color: #2F2F36;
 
-%rubik-300 {
-  font-family: 'Rubik-ligth', sans-serif;
-  font-weight: 300;
+:root {
+  --color-black: #000;
+  --color-white: #fff;
 }
-%rubik-400 {
-  font-family: 'Rubik-Regular', sans-serif;
+
+// font
+%lato-400 {
+  font-family: 'Lato-Regular', sans-serif;
   font-weight: 400;
 }
 
-%rubik-500 {
-  font-family: 'Rubik-Medium', sans-serif;
-  font-weight: 500;
-}
-
-%rubik-700 {
-  font-family: 'Rubik-Bolt', sans-serif;
+%lato-700 {
+  font-family: 'Lato-Bold', sans-serif;
   font-weight: 700;
 }
 
-%DMSans-400 {
-  font-family: 'DMSans-Regular', sans-serif;
+%cons-500 {
+  font-family: 'CormorantGaramond-Regular',
+    sans-serif;
   font-weight: 400;
-}
-
-%DMSans-500 {
-  font-family: 'DMSans-Medium', sans-serif;
-  font-weight: 500;
-}
-
-%DMSans-700 {
-  font-family: 'DMSans-Bold', sans-serif;
-  font-weight: 700;
 }
 
 %checkbox-hidden {

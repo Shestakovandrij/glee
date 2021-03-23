@@ -1,274 +1,87 @@
 .header {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 999;
+  padding: 68px 0 105px;
+  background: url(../img/bghead.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 
-  padding-top: 15px;
-
-  @include r(768) {
-    margin-bottom: 15px;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 306px;
   }
 
-  @include r(768) {
-    padding-top: 20px;
+  &__logo {
+    margin-right: 119px;
   }
 
   &__inner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
-
-    @include r(575) {
-      flex-wrap: wrap;
-    }
-
-    &.header__inner--active {
-      .menu__list {
-        transform: translateY(0%);
-      }
-    }
   }
 
-  &__logo {
-
-    z-index: 11;
-
-
-    @include r(991) {
-      margin-right: 0;
-    }
-
-    @include r(575) {
-      padding-bottom: 10px;
-    }
-
-  }
-}
-
-.menu {
-  margin-bottom: 11px;
-
-  @include r(1199) {
-    margin: 0 10px 0 auto;
-  }
-
-  @include r(991) {
-    margin: 0 0 0 auto;
-  }
-
-  &__btn {
-    display: none;
-
-    @include r(1199) {
-      display: block;
-      background-color: transparent;
-      border: none;
-      padding: 0;
-      cursor: pointer;
-      position: relative;
-      z-index: 11;
-      text-align: center;
-    }
-  }
-
-  &__icon {
-    width: 30px;
-    height: 30px;
-  }
-
-  &__list {
-    display: flex;
-
-    @include r(1199) {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      background-color: rgba(191, 191, 191, 0.796);
-      display: block;
-      text-align: center;
-      z-index: 10;
-      transform: translateY(-200%);
-      transition: all .5s;
-
-      padding-top: 101px !important;
-    }
+  &__social {
+    margin-bottom: 218px;
   }
 
   &__item {
-
     &:not(:last-child) {
-      margin-right: 35px;
-
-      @include r(1199) {
-        margin-right: 0;
-        padding-bottom: 10px;
-      }
-    }
-
-    @include r(1199) {
-      padding: 13px;
-      box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.3);
-      background-color: $bg-color;
-
-      position: relative;
-      z-index: 1;
-      transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
-
-      &:hover {
-
-        animation: rotate 0.7s ease-in-out both;
-
-        span {
-          animation: storm 0.7s ease-in-out both;
-          animation-delay: 0.06s;
-        }
-
-        &:before,
-        &:after {
-          opacity: 0.15;
-          transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
-        }
-
-        &:before {
-          transform: translate3d(50%, 0, 0) scale(0.9);
-        }
-
-        &:after {
-          transform: translate(50%, 0) scale(1.1);
-        }
-      }
+      margin-bottom: 26px;
     }
   }
 
   &__link {
-    font-size: 15px;
-    line-height: 1.2;
-    color: $black-color;
-    @extend %rubik-500;
-    transition: color 0.3s;
-
-    &:hover {
-      color: $accent-color;
-      transition: color 0.4s;
-    }
-
-
-  }
-}
-
-.user-nav {
-  display: flex;
-  z-index: 10;
-
-  &__link {
-    position: relative;
-    cursor: pointer;
-    transition: transform 0.5s;
-
-    &:hover {
-      transform: scale(1.1);
-    }
-
-    &--dots {
-      padding: 16px 15px 12px 16px;
-      margin-left: 18px;
-      background-color: $accent-color;
-      border-radius: 50%;
-      border: none;
-
-      @include r(991) {
-        display: none;
-      }
-    }
-
-    &--cart {
-      margin: 20px 42px 0px 59px;
-      position: relative;
-
-      @include r(991) {
-        margin: 20px 25px 0px 60px;
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        border-right: 1px solid #ffffff;
-        height: 32px;
-        top: -13px;
-        left: -30px;
-      }
-    }
-
-    &--heart {
-      margin-top: 20px;
-    }
-
-    &--search {
-      background-color: #edf1f4;
-      padding: 2px 20px 0px 16px;
-      border: none;
-      border-radius: 50%;
-
-      @include r(1199) {}
-
-      @include r(991) {
-        display: none;
-      }
-    }
+    color: #fff;
+    font-size: 20px;
   }
 
-  &__img {
-    width: 17px;
-    height: 20px;
+  &__info {
+    max-width: 652px;
 
-    &--search {
-      width: 16px;
-      height: 16px;
-    }
-
-    &--dots {
-      width: 20px;
-    }
   }
 
-  &__items {
-    display: flex;
-    background-color: $accent-color;
-    border-radius: 25px;
-    padding-left: 42px;
-    margin-left: 20px;
+  &__info-text {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px;
 
-    @include r(991) {
-      padding-left: 25px;
-    }
-
-    @include r(575) {
-      transform: scale(0.9);
-      margin-left: 0;
-    }
   }
 
-  &__num {
-    font-size: 10px;
-    line-height: 20px;
-    color: $default-color;
-    position: absolute;
-    top: -14px;
-    right: -12px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: $white-color;
-    text-align: center;
+  &__info-title {
+    color: #fff;
   }
-}
 
-.logo {
-  &__img {
-    max-height: 100px;
+  &__preference {
+    margin-top: 43px;
   }
+
+  &__preference-item {
+    padding: 105px 47px 40px 40px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    max-width: 277px;
+    height: 280px;
+    margin-bottom: 45px;
+  }
+
+  &__preference-info {
+    font-size: 35px;
+    line-height: 35px;
+    color: #fff;
+    font-family: "CormorantGaramond-Regular";
+    src: url('../fonts/CormorantGaramond-Regular.woff2') format("woff2");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  &__preference-text {
+    font-size: 18px;
+    line-height: 25.2px;
+    color: #fff;
+    margin-top: 15px;
+    max-width: 179px;
+  }
+
+
 }
